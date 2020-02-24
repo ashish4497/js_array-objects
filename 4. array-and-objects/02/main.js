@@ -61,6 +61,13 @@ function sayHello() {
 }
 
 for (i = 0; i <= penguins.length; i++) {
-  var newProp = penguins[i].value = 2;
+  var newProp = penguins[i].numberOfFeet = 2;
   console.log(newProp)
+}
+
+
+for (i = 0; i <= penguins.length; i++) {
+  if (penguins[i].canFly == true) {
+    console.log(`${penguins[i].name} can Fly`)
+  }
 }
